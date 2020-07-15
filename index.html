@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>user profile system</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="images/png" href="images/icons.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Varta:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-sec">
+
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mt-4">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">User</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Profile Settings</li>
+            </ol>
+        </nav>
+        <div class="row">
+            <div class="col-md-4 col-lg-3 col-12 d-md-block">
+                <div class="card bg_common card_left">
+                    <div class="card-body">
+                        <ul class="nav flex-column d-md-block d-none">
+                            <li class="nav-item">
+                                <a data-toggle="tab" class="nav-link active" aria-current="page" href="#profile"><i
+                                        class="mr-1 fas fa-user"></i>
+                                    Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-toggle="tab" class="nav-link" href="#account"><i
+                                        class="mr-1 fas fa-user-cog"></i>Account Settings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-toggle="tab" class="nav-link" href="#security"><i class="mr-1 fas fa-lock"></i>
+                                    Security</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-toggle="tab" class="nav-link" href="#notification"><i
+                                        class="mr-1 fas fa-bell"></i> Notifications</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-toggle="tab" class="nav-link" href="#billing"><i
+                                        class="mr-1 fas fa-money-check-alt"></i> Billing</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- right div start -->
+            <div class="col-lg-9 col-md-8">
+                <div class="card">
+                    <div class="card-header border-bottom mb-3 d-md-none crd_mb">
+                        <ul class="nav nav-tabs nav-fill">
+                            <li class="nav-item">
+                                <a data-toggle="tab" class="nav-link active" aria-current="page" href="#profile"><i
+                                        class="mr-1 fas fa-user"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-toggle="tab" class="nav-link" href="#account"><i
+                                        class="mr-1 fas fa-user-cog"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-toggle="tab" class="nav-link" href="#security"><i
+                                        class="mr-1 fas fa-lock"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-toggle="tab" class="nav-link" href="#notification"><i
+                                        class="mr-1 fas fa-bell"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-toggle="tab" class="nav-link" href="#billing"><i
+                                        class="mr-1 fas fa-money-check-alt"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- user profile start -->
+                    <div class="card-body tab-content border-0 bg-light">
+                        <!-- actual profile data -->
+                        <div class="tab-pane active" id="profile">
+                            <h6>YOUR PROFILE INFORMATION</h6>
+                            <hr>
+                            <form action="">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="username" placeholder="ankit jangir">
+                                    <small class="form-text text-muted">please enter your full name</small>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Your Bio</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="i am a Full Stack Devloper"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">URL</label>
+                                    <input type="text" class="form-control" id="username" placeholder="https://www.ajwebdevloper.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Location</label>
+                                    <input type="text" class="form-control" id="username" placeholder="jhunjhunu, rajasthan,india">
+                                </div>
+                                <div class="form-grouo form-text text-muted small">
+                                    all of the fields on this page are optional and can be deleted at any time, and by filling them out, you're giving us consent to share this data wherever your user profile appers.
+                                </div>
+                                <br>
+                                <button class="btn btn-outline-info" type="submit">Update Profile</button>
+                                <button class="btn" type="submit">Reset Changes</button>
+                            </form>
+                        </div>
+
+                        <div class="tab-pane" id="account">
+                            <h6>ACCOUNT SETTINGS</h6>
+                            <hr>
+                            <form action="">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">UserName</label>
+                                    <input type="text" class="form-control" id="username" placeholder="ankit jangir">
+                                    <small class="form-text text-muted text-capitalize">After Changing your UserName
+                                        Becomes for the Anywone change</small>
+                                </div>
+                            </form>
+                            <hr>
+                            <form action="">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label text-danger">Delete
+                                        Account</label>
+                                    <p class="text-muted text-capitalize">once you deleted your account,there is no going back.please be certain.</p>
+                                    <small class="form-text text-muted text-capitalize">After Changing your UserName
+                                        Becomes for the Anywone change</small>
+                                </div>
+                                <button class="btn btn-danger" type="submit">Delete Account</button>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="security">
+                            <h6>SECURITY</h6>
+                            <hr>
+                            <form action="">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Change Password</label>
+                                    <input type="password" class="form-control" id="username" placeholder="Enter Your Old Password">
+                                    <br>
+                                    <input type="password" class="form-control" id="username" placeholder="New Password"> <br>
+                                    <input type="password" class="form-control" id="username" placeholder="Conform Password">
+                                </div>
+                            </form>
+                            <hr>
+                            <form action="">
+                                <div class="form-group">
+                                    <label class="d-block mb-2">Two Factor Authentication</label>
+                                    <button class="btn btn-outline-info" type="submit">
+                                        Enable two-factor Authentication
+                                    </button>
+                                    <p class="text-muterd small">two-factor authenication adds and additional of security by requring more than just a password to log in.</p>
+                                </div>
+                            </form>
+                            <hr>
+                            <form action="">
+                                <div class="form-group">
+                                    <label class="d-block">Sessions</label>
+                                    <p class="text-muterd small">two-factor authenication adds and additional of security by requring more than just a password to log in.</p>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <div>
+                                                <h6>Jhunjhunu 28.2096 N, 83.9856 E</h6>
+                                                <small class="text-muted">Your Current session seend in
+                                                    jhunjhunu</small>
+                                            </div>
+                                            <button class="btn btn-light btn-sm ml-auto" type="submit">More
+                                                Info</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+                        <div class=" tab-pane " id="notification">
+                            <h6>NOTIFICATION SETTINGS</h6>
+                            <hr>
+                            <form action="">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label d-block">Security
+                                        Alrets</label>
+                                    <small class="form-text text-muted text-capitalize">receive security alert
+                                        notifaction via email.</small>
+                                    <div class="form-check mt-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Email each time a vulnerrability in found
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            email a diginest summery of vulnerability
+                                        </label>
+                                    </div>
+                                </div>
+                                <!-- sms notication part -->
+                                <div class="mb-3">
+                                    <label class="d-block mb-2">SMS notifications</label>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            Comments
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            Update From People
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            Reminders
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            Events
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            Pages you Follow
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane " id="billing">
+                            <h6>BILLING SETTINGS</h6>
+                            <hr>
+                            <form action="">
+                                <div class="mb-3">
+                                    <label for="" class="d-block">Payment Methods</label>
+                                    <small class="text-muted small text-capitalize d-block m-1">
+                                        you have not added a payment method
+                                    </small>
+                                    <button class="btn btn-outline-info" type="submit">Add Payment Methods</button>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="" class="d-block">Payment History</label>
+                                    <div class="border p-3 text-center text-capitalize">
+                                        you have not made any payment
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous ">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js " integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/ " crossorigin="anonymous ">
+    </script>
+</body>
+
+</html>
